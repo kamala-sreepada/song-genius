@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>AI Song Finder</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+		<link rel="icon" href="images/web-logo.png" type="image/x-icon">
+
+	</head>
+
+	<body>
+		<div class="scroller"></div>
+		<nav class="navbar">
+			<div class="navbar_container">
+				<a href="index.html"><img class="logo" src="images/logo2.png" id="logo">
+				</a>
+				<div class="navbar_toggle" id="mobile-menu">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<ul class="navbar_menu">
+					<li class="navbar_item">
+						<a id="home_link" href="https://heavytree60.qoom.space/~/AI-Song-Finder/index" class="navbar_links">Home</a>
+					</li>
+					<li class="navbar_item">
+						<a id="recom_link" href="https://heavytree60.qoom.space/~/AI-Song-Finder/recommender" class="navbar_links">Song Recommendations</a>
+					</li>
+					<li class="navbar_btn">
+						<a href="/" class="button">Login</a>
+					</li>
+					<li class="navbar_btn">
+						<a href="/" class="button">Sign Up</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<form id="form">
+			<div class="form" id="form">
+				<div class="form_container">
+					<h1 class="form_heading">Select your preferences</h1>
+					<!-- Mood Checkboxes -->
+					<div class="form_layout">
+						<label for="checks1">Choose mood: <span class="req">*</span> </label>
+						<ul class="unstyled-centered" id="checks1">
+							<li>
+								<input id="styled-checkbox-1" class="styled-checkbox" type="radio" value="happy" name="selector">
+								<label for="styled-checkbox-1"> Happy</label>
+							</li>
+							<li>
+								<input id="styled-checkbox-2" class="styled-checkbox" type="radio" value="sad" name="selector">
+								<label for="styled-checkbox-2">Sad</label>
+							</li>
+							<li>
+								<input id="styled-checkbox-3" class="styled-checkbox" type="radio" value="relaxing" name="selector">
+								<label for="styled-checkbox-3">Relaxing</label>
+							</li>
+							<li>
+								<input id="styled-checkbox-4" class="styled-checkbox" type="radio" value="upbeat" name="selector">
+								<label for="styled-checkbox-4">Upbeat</label>
+							</li>
+							<li>
+								<input id="styled-checkbox-5" class="styled-checkbox" type="radio" value="energetic" name="selector">
+								<label for="styled-checkbox-5">Energetic</label>
+							</li>
+							<li>
+								<input id="styled-checkbox-6" class="styled-checkbox" type="radio" value="chill lo-fi" name="selector">
+								<label for="styled-checkbox-6">Chill Lo-Fi</label>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Era Dropdown -->
+					<div class="dropdown_layout">
+						<label class="era_label" for="select_era">Choose Era: <span class="req">*</span> </label>
+						<select id="select_era" class="select_era">
+							<option disabled hidden selected>Select</option>
+							<option value="contemporary">Contemporary</option>
+							<option value="2010s">2010s</option>
+							<option value="2000s">2000s</option>
+							<option value="1990s">1990s</option>
+							<option value="1980s">1980s</option>
+						</select>
+					</div>
+
+
+					<!-- Genre Checkboxes -->
+					<div class="form_layout">
+						<label for="checks2">Choose genre: <span class="req">*</span></label>
+						<ul class="unstyled-centered" id="checks2">
+							<li>
+								<input class="styled-checkbox" type="radio" value="rock" name="selector1">
+								<label for="styled-checkbox-1"> Rock</label>
+							</li>
+							<li>
+								<input class="styled-checkbox" type="radio" value="pop" name="selector1">
+								<label for="styled-checkbox-2">Pop</label>
+							</li>
+							<li>
+								<input class="styled-checkbox" type="radio" value="classical" name="selector1">
+								<label for="styled-checkbox-3">Classical</label>
+							</li>
+							<li>
+								<input class="styled-checkbox" type="radio" value="EDM" name="selector1">
+								<label for="styled-checkbox-4">EDM</label>
+							</li>
+							<li>
+								<input class="styled-checkbox" type="radio" value="jazz" name="selector1">
+								<label for="styled-checkbox-4">Jazz</label>
+							</li>
+							<li>
+								<input class="styled-checkbox" type="radio" value="rap" name="selector1">
+								<label for="styled-checkbox-4">Rap</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Favorite Artists Textboxes -->
+			<div class="artists_container">
+				<label for="artists">Enter your top 3 artists: <span class="req">*</span></label>
+				<ul id="artists" class="artists_list">
+					<li>
+						<label for="artist1">Artist 1:</label>
+						<input type="text" class="artists_textbox" id="artist1">
+					</li>
+					<li>
+						<label for="artist2">Artist 2:</label>
+						<input type="text" class="artists_textbox" id="artist2">
+					</li>
+					<li>
+						<label for="artist3">Artist 3:</label>
+						<input type="text" class="artists_textbox" id="artist3">
+					</li>
+				</ul>
+
+				<!-- Language Dropdown -->
+				<div class="dropdown_layout_lang">
+					<label class="era_label" for="select_lang">Choose Language: <span class="req">*</span> </label>
+					<select id="select_lang" class="select_era">
+						<option disabled hidden selected>Select</option>
+						<option value="english">English</option>
+						<option value="hindi">Hindi</option>
+						<option value="telugu">Telugu</option>
+						<option value="spanish">Spanish</option>
+						<option value="korean">Korean</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- <input type="button" class="next_button" value="Give me song suggestions ➡️"> -->
+			<button type="submit" class="next_button">Make my playlist now️✨→</button>
+			<br>
+			<br>
+		</form>
+
+
+		<script>
+			localStorage.clear();
+			const form = document.getElementById('form');
+			const mood = document.querySelectorAll('input[name="selector"]');
+			const genre = document.querySelectorAll('input[name="selector1"]');
+			const era = document.getElementById('select_era');
+			const lang = document.getElementById('select_lang');
+			const artist1 = document.getElementById('artist1');
+			const artist2 = document.getElementById('artist2');
+			const artist3 = document.getElementById('artist3');
+
+			let scroller = document.querySelector(".scroller");
+			let height =
+				document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+			window.addEventListener("scroll", () => {
+				let scrollTop = document.documentElement.scrollTop;
+				scroller.style.width = `${(scrollTop / height) * 100}%`;
+			});
+
+			form.addEventListener('submit', function (e) {
+				e.preventDefault();
+				for (const m of mood) {
+					if (m.checked) {
+						const moodValue = m.value;
+						localStorage.setItem('mood-value', moodValue);
+					}
+				}
+				const eraValue = era.options[era.selectedIndex].value;
+				localStorage.setItem('era-value', eraValue);
+
+				const artistValue1 = artist1.value;
+				localStorage.setItem('artist1-value', artistValue1);
+				const artistValue2 = artist2.value;
+				localStorage.setItem('artist2-value', artistValue2);
+				const artistValue3 = artist3.value;
+				localStorage.setItem('artist3-value', artistValue3);
+
+				const langValue = lang.options[lang.selectedIndex].value;
+				localStorage.setItem('lang-value', langValue);
+				for (const g of genre) {
+					if (g.checked) {
+						const genreValue = g.value;
+						localStorage.setItem('genre-value', genreValue);
+					}
+				}
+				window.location.href = "results.html";
+
+			})
+		</script>
+
+	</body>
+
+</html>
